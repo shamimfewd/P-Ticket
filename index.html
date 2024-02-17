@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- daisyui and tailwindcss -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -12,8 +20,259 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="container mx-auto">
+      <!--------------------- navbar ---------------------->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl font-bold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <img src="smart-ticketing/images/Frame.png" alt="img" />
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <!-- -----------banner section--------------- -->
+      <section class="banner-section">
+        <div
+          class="banner_container flex flex-col justify-center items-center text-center"
+        >
+          <div class="py-32 space-y-16">
+            <h1 class="text-6xl font-bold text-[#fff] mx-auto">
+              End-to-End Travel with <br />
+              <span class="text-[#1DD100] p-8">P Paribahan</span>
+            </h1>
+            <p class="text-[#fff] w-2/3 text-center mx-auto">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button class="btn bg-[#1DD100] border-[#1DD100] text-black">
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-32">
+        <h3 class="text-3xl font-bold text-center">Best offers for you</h3>
+        <div class="flex justify-around mx-auto mt-8 gap-4">
+          <div
+            class="bg-[#FFBF0F] flex justify-center rounded-2xl items-center py-10 flex-1 px-14"
+          >
+            <div class="pr-10 space-y-3">
+              <h3 class="text-3xl font-extrabold">15 % OFF</h3>
+              <p class="font-bold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <div class="pl-10 space-y-3">
+              <h3 class="text-3xl font-bold">NEW15</h3>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#F78C9C] flex justify-center rounded-2xl items-center px-12 flex-1"
+          >
+            <div class="pr-10 space-y-3">
+              <h3 class="text-3xl font-extrabold">20 % OFF</h3>
+              <p class="font-bold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+
+            <div class="pl-10">
+              <h3 class="text-3xl font-bold">Couple 20</h3>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="btn mt-12 text-[#1DD100] text-center flex justify-center items-center mx-auto"
+        >
+          See All Offers
+        </button>
+      </section>
+
+      <section class="p_H_Paribahan_section mt-32 pt-24 rounded-t-[5rem] border-t-2 border-[#1DD100] bg-[#F7F8F8]">
+        <h3 class="text-3xl font-bold text-center">P.H Paribahan</h3>
+        <p class="w-2/3 mx-auto text-center py-7">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+
+        <div
+          class="flex  mx-auto justify-between items-center bg-[#FFFFFF] max-w-[70rem]"
+        >
+          <div
+            class="flex justify-between flex-2 w-[70%] rounded-2xl items-center  p-10"
+          >
+            <!-- -------------- -->
+
+            <div>
+              <div class="flex mb-8">
+                <div class="flex">
+                  <img
+                    class="w-20 h-15 p-4"
+                    src="smart-ticketing/images/bus-logo.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4 class="text-2xl font-bold">Greenline Paribahan</h4>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+
+                <!-- -------------------- -->
+                <div
+                  class="flex justify-center items-center space-x-4 ml-48 bg-[#1cd10084] p-4 rounded-xl text-black"
+                >
+                  <img src="smart-ticketing/images/seat-gray.png" alt="" />
+                  <span>40</span> Seats left
+                </div>
+              </div>
+
+              <!-- -------------------------- -->
+              <div class="bg-[#F7F8F8]">
+                <div class="flex justify-between p-4">
+                  <p>Route</p>
+                  <p>Dhaka - Sylhet</p>
+                </div>
+                <hr />
+                <div class="flex justify-between p-4">
+                  <p>Departure Time</p>
+                  <p>9:00 PM</p>
+
+                </div>
+                <hr>
+                <div class="pt-10 text-center mx-auto"> 
+                <span class="bg-[#EBECED] p-4 rounded-xl">Boarding Point - Laxmipur</span>
+                <span class="bg-[#EBECED] p-4 rounded-xl">Dropping Point - Bogura</span>
+                <span class="bg-[#EBECED] p-4 rounded-xl">Est. Time - 11 Hour</span>
+            </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- -------------------- -->
+          <div class="flex flex-col bg-[#FFFFFF] flex-1 justify-center items-center">
+            <img
+              class="w-20 h-20"
+              src="smart-ticketing/images/fare.png"
+              alt=""
+            />
+            <br />
+            <h5 class="text-2xl font-bold">550 Taka</h5>
+            <p>Per Seat</p>
+          </div>
+        </div>
+
+
+
+        <!-- ============================================ -->
+
+        <div class="taketContainer grid rounded-2xl grid-cols-1 p-8 lg:grid-cols-2 bg-[#FFFFFF] mx-auto mt-12 max-w-[70rem]">
+
+<div>
+    <h4 class="text-2xl mb-8">Select Your Seat</h4>
+    <hr>
+    <div class="flex justify-between py-4 border-y-dotted">
+        <p class="flex justify-center items-center"><img  src="smart-ticketing/images/seat-gray.png" alt=""> <span>Available</span></p>
+        
+        <p class="flex justify-center items-center"><img src="smart-ticketing/images/seat-green-filled.png" alt="">  <span>Selected</span></p>
+      
+    </div>
+    <hr>
+
+    <div class="sitContainer grid grid-cols-4 gap-4">
+<button class="btn">A1</button>
+<button class="btn">A2</button>
+<button class="btn">A3</button>
+<button class="btn">A4</button>
+<button class="btn">B1</button>
+<button class="btn">B2</button>
+<button class="btn">B3</button>
+<button class="btn">B4</button>
+<button class="btn">C1</button>
+<button class="btn">C2</button>
+<button class="btn">C3</button>
+<button class="btn">C4</button>
+<button class="btn">D1</button>
+<button class="btn">D2</button>
+<button class="btn">D3</button>
+<button class="btn">D4</button>
+<button class="btn">E1</button>
+<button class="btn">E2</button>
+<button class="btn">E3</button>
+<button class="btn">E4</button>
+<button class="btn">F1</button>
+<button class="btn">F2</button>
+<button class="btn">F3</button>
+<button class="btn">F4</button>
+<button class="btn">G1</button>
+<button class="btn">G2</button>
+<button class="btn">G3</button>
+<button class="btn">G4</button>
+<button class="btn">H1</button>
+<button class="btn">H2</button>
+<button class="btn">H3</button>
+<button class="btn">H4</button>
+<button class="btn">I1</button>
+<button class="btn">I2</button>
+<button class="btn">I3</button>
+<button class="btn">I4</button>
+<button class="btn">J1</button>
+<button class="btn">J2</button>
+<button class="btn">J3</button>
+<button class="btn">J4</button>
+    </div>
+</div>
+
+        </div>
+      </section>
+    </main>
+    <footer></footer>
     <script src="index.js"></script>
   </body>
 </html>
