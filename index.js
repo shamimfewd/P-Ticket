@@ -47,6 +47,19 @@ for (const seat of allSeat) {
   });
 }
 
+let phoneNumberInput = document.getElementById("phoneNumber")
+let nextBtn = document.getElementById("nextBtn");
+
+phoneNumberInput.addEventListener("keyup", function (e) {
+  let phoneNumber = e.target.value;
+
+  if (count >= 0 && phoneNumber !== "") {
+    nextBtn.removeAttribute("disabled");
+  } else {
+    nextBtn.setAttribute("disabled", true);
+  }
+});
+
 document.getElementById("couponBtn").addEventListener("click", function (e) {
   const couponField = document.getElementById("couponField").value;
 
@@ -63,8 +76,8 @@ document.getElementById("couponBtn").addEventListener("click", function (e) {
       const minus = totalFare - parseInt(discount);
       document.getElementById("grandTotal").innerText = minus;
       document.getElementById("couponContainer").classList.add("hidden");
-    }else{
-      alert('Invalid Coupon Code')
+    } else {
+      alert("Invalid Coupon Code");
     }
   } else {
     return alert("You have to take at least 4 Tickets");

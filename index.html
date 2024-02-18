@@ -390,33 +390,67 @@
                 <p>BDT <span id="grandTotal">0</span></p>
               </div>
 
-              <div>
+              <div class="pt-8">
                 <form action="">
                   <label for="">Passenger Name*</label>
                   <br />
                   <input
                     type="text"
-                    placeholder="Type here"
+                    placeholder="Enter Your Name"
                     class="input input-bordered w-full max-w-xs"
                   />
+                  <br>
+                  <br>
+                  <label for="">Phone Number*</label>
+                  <br>
+                  <input
+                  id="phoneNumber"
+                  type="number"
+                  placeholder="Enter Your Number"
+                  class="input input-bordered w-full max-w-xs"
+                />
                   <br />
                   <br />
                   <label for="">Email Id</label>
                   <br />
                   <input
                     type="text"
-                    placeholder="Type here"
+                    placeholder="Enter Your Email"
                     class="input input-bordered w-full max-w-xs"
                   />
                   <br />
                   <br />
-                  <button class="btn w-[65%] bg-[#1DD100]">Next</button>
+
+                  <div>
+                 
+            <label for="my_modal_7" id="nextBtn" class="btn w-[65%] bg-[#1DD100] text-[#fff]" disabled>open modal</label>
+            
+     
+            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+            <div class="modal" role="dialog">
+              <div class="modal-box text-center p-8">
+                <img class="mx-auto" src="smart-ticketing/images/success.png" alt="">
+                <h3 class="text-lg font-bold pt-5 text-[#27AE60]">SUCCESS</h3>
+                <p class="py-4 mx-auto pt-5">Thank you for Booking Our Bus Seats. 
+                  We are working hard to find the best service and deals for you.</p>
+                  <p class="text-center mx-auto "> <small>Shortly you will find a confirmation in your email.</small> </p>
+              <button class="btn  text-[#fff] mt-5 w-60 rounded-full font-bold bg-[#27AE60] ">Continue</button>
+                </div>
+              <label class="modal-backdrop" for="my_modal_7">Close</label>
+            </div>
+                  </div>
+
+
+                  <!-- <button id="nextBtn" class="btn w-[65%] bg-[#1DD100] text-[#fff] " disabled>Next</button> -->
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+<!-- modal -->
+    
     </main>
     <footer></footer>
     <script src="index.js"></script>
