@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +21,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+
+
+    
   </head>
   <body>
     <header class="container mx-auto">
@@ -28,7 +31,7 @@
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class=" -ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -56,7 +59,7 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-3xl font-bold">P-Ticket</a>
+          <a class=" -ghost text-3xl font-bold">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -88,8 +91,9 @@
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
-            <button class="btn bg-[#1DD100] border-[#1DD100] text-black">
-              Buy Tickets
+            <button  class=" btn bg-[#1DD100] border-[#1DD100] text-black">
+             
+              <a href="#mainSection">Buy Tickets</a>
             </button>
           </div>
         </div>
@@ -129,13 +133,15 @@
         </div>
 
         <button
-          class="btn mt-12 text-[#1DD100] text-center flex justify-center items-center mx-auto"
+          class=" mt-12 text-[#1DD100] text-center flex justify-center items-center mx-auto"
         >
           See All Offers
         </button>
       </section>
 
-      <section class="p_H_Paribahan_section mt-32 pt-24 rounded-t-[5rem] border-t-2 border-[#1DD100] bg-[#F7F8F8]">
+      <section id="mainSection"
+        class="p_H_Paribahan_section mt-32 pt-24 rounded-t-[5rem] border-t-2 border-[#1DD100] bg-[#F7F8F8]"
+      >
         <h3 class="text-3xl font-bold text-center">P.H Paribahan</h3>
         <p class="w-2/3 mx-auto text-center py-7">
           Yes, you can run unit tests and view the results directly within the
@@ -143,10 +149,10 @@
         </p>
 
         <div
-          class="flex  mx-auto justify-between items-center bg-[#FFFFFF] max-w-[70rem]"
+          class="flex mx-auto justify-between items-center bg-[#FFFFFF] max-w-[70rem]"
         >
           <div
-            class="flex justify-between flex-2 w-[70%] rounded-2xl items-center  p-10"
+            class="flex justify-between flex-2 w-[70%] rounded-2xl items-center p-10"
           >
             <!-- -------------- -->
 
@@ -169,7 +175,7 @@
                   class="flex justify-center items-center space-x-4 ml-48 bg-[#1cd10084] p-4 rounded-xl text-black"
                 >
                   <img src="smart-ticketing/images/seat-gray.png" alt="" />
-                  <span>40</span> Seats left
+                  <span id="totalSeat">40</span> Seats left
                 </div>
               </div>
 
@@ -183,20 +189,27 @@
                 <div class="flex justify-between p-4">
                   <p>Departure Time</p>
                   <p>9:00 PM</p>
-
                 </div>
-                <hr>
-                <div class="pt-10 text-center mx-auto"> 
-                <span class="bg-[#EBECED] p-4 rounded-xl">Boarding Point - Laxmipur</span>
-                <span class="bg-[#EBECED] p-4 rounded-xl">Dropping Point - Bogura</span>
-                <span class="bg-[#EBECED] p-4 rounded-xl">Est. Time - 11 Hour</span>
-            </div>
+                <hr />
+                <div class="pt-10 text-center mx-auto">
+                  <span class="bg-[#EBECED] p-4 rounded-xl"
+                    >Boarding Point - Laxmipur</span
+                  >
+                  <span class="bg-[#EBECED] p-4 rounded-xl"
+                    >Dropping Point - Bogura</span
+                  >
+                  <span class="bg-[#EBECED] p-4 rounded-xl"
+                    >Est. Time - 11 Hour</span
+                  >
+                </div>
               </div>
             </div>
           </div>
 
           <!-- -------------------- -->
-          <div class="flex flex-col bg-[#FFFFFF] flex-1 justify-center items-center">
+          <div
+            class="flex flex-col bg-[#FFFFFF] flex-1 justify-center items-center"
+          >
             <img
               class="w-20 h-20"
               src="smart-ticketing/images/fare.png"
@@ -208,67 +221,200 @@
           </div>
         </div>
 
+        <!-- ==========seat number================================== -->
 
+        <div
+          class="taketContainer grid rounded-2xl gap-8 grid-cols-1 p-8 lg:grid-cols-2 bg-[#FFFFFF] mx-auto mt-12 max-w-[70rem]"
+        >
+          <div>
+            <h4 class="text-2xl mb-8">Select Your Seat</h4>
+            <hr />
+            <div class="flex justify-between py-4 border-y-dotted">
+              <p class="flex justify-center items-center">
+                <img src="smart-ticketing/images/seat-gray.png" alt="" />
+                <span>Available</span>
+              </p>
 
-        <!-- ============================================ -->
+              <p class="flex justify-center items-center">
+                <img
+                  src="smart-ticketing/images/seat-green-filled.png"
+                  alt=""
+                />
+                <span>Selected</span>
+              </p>
+            </div>
+            <hr />
+            <div class="flex justify-between">
+              <p></p>
+              <img
+                class="pt-4"
+                src="smart-ticketing/images/Group 56.png"
+                alt=""
+              />
+            </div>
 
-        <div class="taketContainer grid rounded-2xl grid-cols-1 p-8 lg:grid-cols-2 bg-[#FFFFFF] mx-auto mt-12 max-w-[70rem]">
+            <div class="seatContainer grid grid-cols-4 gap-4 pt-4">
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">A</span>
+                <button id="A1" class="seat w-[7rem]">A1</button>
+              </div>
 
-<div>
-    <h4 class="text-2xl mb-8">Select Your Seat</h4>
-    <hr>
-    <div class="flex justify-between py-4 border-y-dotted">
-        <p class="flex justify-center items-center"><img  src="smart-ticketing/images/seat-gray.png" alt=""> <span>Available</span></p>
-        
-        <p class="flex justify-center items-center"><img src="smart-ticketing/images/seat-green-filled.png" alt="">  <span>Selected</span></p>
-      
-    </div>
-    <hr>
+              <button id="A2" class=" seat">A2</button>
+              <button id="A3" class=" seat">A3</button>
+              <button id="A4" class=" seat">A4</button>
 
-    <div class="sitContainer grid grid-cols-4 gap-4">
-<button class="btn">A1</button>
-<button class="btn">A2</button>
-<button class="btn">A3</button>
-<button class="btn">A4</button>
-<button class="btn">B1</button>
-<button class="btn">B2</button>
-<button class="btn">B3</button>
-<button class="btn">B4</button>
-<button class="btn">C1</button>
-<button class="btn">C2</button>
-<button class="btn">C3</button>
-<button class="btn">C4</button>
-<button class="btn">D1</button>
-<button class="btn">D2</button>
-<button class="btn">D3</button>
-<button class="btn">D4</button>
-<button class="btn">E1</button>
-<button class="btn">E2</button>
-<button class="btn">E3</button>
-<button class="btn">E4</button>
-<button class="btn">F1</button>
-<button class="btn">F2</button>
-<button class="btn">F3</button>
-<button class="btn">F4</button>
-<button class="btn">G1</button>
-<button class="btn">G2</button>
-<button class="btn">G3</button>
-<button class="btn">G4</button>
-<button class="btn">H1</button>
-<button class="btn">H2</button>
-<button class="btn">H3</button>
-<button class="btn">H4</button>
-<button class="btn">I1</button>
-<button class="btn">I2</button>
-<button class="btn">I3</button>
-<button class="btn">I4</button>
-<button class="btn">J1</button>
-<button class="btn">J2</button>
-<button class="btn">J3</button>
-<button class="btn">J4</button>
-    </div>
-</div>
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">B</span>
+                <button id="B1" class=" seat w-[7rem]">B1</button>
+              </div>
+              <button id="B2" class=" seat">B2</button>
+              <button id="B3" class=" seat">B3</button>
+              <button id="B4" class=" seat">B4</button>
 
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">C</span>
+                <button id="C1" class=" seat w-[7rem]">C1</button>
+              </div>
+              <button id="C2" class=" seat">C2</button>
+              <button id="C3" class=" seat">C3</button>
+              <button id="C4" class=" seat">C4</button>
+
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">D</span>
+                <button id="D1" class=" seat w-[7rem]">D1</button>
+              </div>
+              <button id="D2" class=" seat">D2</button>
+              <button id="D3" class=" seat">D3</button>
+              <button id="D4" class=" seat">D4</button>
+
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">E</span>
+                <button id="E1" class=" seat w-[7rem]">E1</button>
+              </div>
+              <button id="E2" class=" seat">E2</button>
+              <button id="E3" class=" seat">E3</button>
+              <button id="E4" class=" seat">E4</button>
+
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">F</span>
+                <button id="F1" class=" seat w-[7rem]">F1</button>
+              </div>
+              <button id="F2" class=" seat">F2</button>
+              <button id="F3" class=" seat">F3</button>
+              <button id="F4" class=" seat">F4</button>
+
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">G</span>
+                <button id="G1" class=" seat w-[7rem]">G1</button>
+              </div>
+              <button id="G2" class=" seat">G2</button>
+              <button id="G3" class=" seat">G3</button>
+              <button id="G4" class=" seat">G4</button>
+
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">H</span>
+                <button id="H1" class=" seat w-[7rem]">H1</button>
+              </div>
+              <button id="H2" class=" seat">H2</button>
+              <button id="H3" class=" seat">H3</button>
+              <button id="H4" class=" seat">H4</button>
+
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">I</span>
+                <button id="I1" class=" seat w-[7rem]">I1</button>
+              </div>
+              <button id="I2" class=" seat">I2</button>
+              <button id="I3" class=" seat">I3</button>
+              <button id="I4" class=" seat">I4</button>
+
+              <div class="flex items-center gap-4">
+                <span class="-ml-4">J</span>
+                <button id="J1" class=" seat w-[7rem]">J1</button>
+              </div>
+              <button id="J2" class=" seat">J2</button>
+              <button id="J3" class=" seat">J3</button>
+              <button id="J4" class=" seat">J4</button>
+
+              <!-- ============= -->
+            </div>
+          </div>
+
+          <!-- Select Your Seat------------------- -->
+
+          <div>
+            <h4 class="text-2xl mb-8">Select Your Seat</h4>
+            <hr />
+
+            <div>
+              <div class="grid grid-cols-3 pt-4 border-b pb-5">
+                <div class="flex">
+                  <h4>Seat</h4>
+                  <span id="seatQuantity" class="text-[#1DD100] font-bold">0</span>
+                </div>
+                <div>
+                  <h4>Class</h4>
+                </div>
+                <div>
+                  <h4>Price</h4>
+                </div>
+              </div>
+           
+              <ul
+                id="seatContainer"
+                class="pt-6 border-b"
+              >
+                
+              </div>
+          
+              <div class="flex justify-between pt-6 w-[80%]">
+                <p>Total</p>
+                <p>BDT <span id="total">0</span></p>
+              </div>
+
+              <div class="flex justify-between pt-6 w-[80%]">
+                <p>Discount</p>
+                <p>BDT <span id="discount15">0</span></p>
+              </div>
+              
+              <div id="couponContainer"  class="mt-8">
+                <input id="couponField"
+                  type="text"
+                  placeholder="Enter Coupon Code"
+                  class="input input-bordered w-full max-w-xs"
+                />
+                <button id="couponBtn" disabled class="btn bg-[#1DD100] text-[#fff]">Apply</button>
+              </div>
+
+              <div class="flex justify-between pt-6 w-[80%]">
+                <p>Grand Total</p>
+                <p>BDT <span id="grandTotal">0</span></p>
+              </div>
+
+              <div>
+                <form action="">
+                  <label for="">Passenger Name*</label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Type here"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                  <br />
+                  <br />
+                  <label for="">Email Id</label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Type here"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                  <br />
+                  <br />
+                  <button class="btn w-[65%] bg-[#1DD100]">Next</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
