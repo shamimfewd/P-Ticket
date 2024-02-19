@@ -107,7 +107,7 @@
      
      
 <!-- ==============Coupon Code Section================== -->
-      <section class="mt-32">
+      <section class="mt-32 lg:max-w-[70rem] mx-auto">
         <h3 class="text-4xl pb-6 font-bold text-center">Best offers for you</h3>
         <div class=" grid grid-cols-1 lg:grid-cols-2  mx-auto mt-8 gap-4">
           
@@ -173,7 +173,7 @@
 <!-- ========================= -->
 
 
-<div class="bg-[#fff] m-10 rounded-2xl">
+<div class="bg-[#fff] m-10 rounded-2xl mx-auto lg:max-w-[70rem]">
   <div class="grid grid-cols-1 lg:grid-cols-12 p-10">
     <!-- box one -->
     <div class="lg:col-span-8">
@@ -255,12 +255,12 @@
 
 
 
-        <!-- ==========seat number================================== -->
+        <!-- ==========Select Your seat================================== -->
 
         <div
-          class="taketContainer grid rounded-2xl gap-8 grid-cols-1 p-8 lg:grid-cols-2 bg-[#FFFFFF] mx-auto mt-12 max-w-[70rem]"
+          class="taketContainer grid rounded-2xl gap-8 grid-cols-1 p-8 lg:grid-cols-12 bg-[#FFFFFF] mx-auto mt-12 max-w-[70rem]"
         >
-          <div>
+          <div class="lg:col-span-8">
             <h4 class="text-2xl mb-8">Select Your Seat</h4>
             <hr />
             <div class="flex justify-between py-4 border-y-dotted">
@@ -375,15 +375,15 @@
 
           <!-- Select Your Seat------------------- -->
 
-          <div>
-            <h4 class="text-2xl mb-8">Select Your Seat</h4>
+          <div class="lg:col-span-4">
+            <h4 class="text-2xl mb-8 ">Select Your Seat</h4>
             <hr />
 
             <div>
-              <div class="grid grid-cols-3 pt-4 border-b pb-5">
+              <div class="flex justify-between pt-4 border-b pb-5">
                 <div class="flex">
                   <h4>Seat</h4>
-                  <span id="seatQuantity" class="text-[#1DD100] font-bold">0</span>
+                  <span id="seatQuantity" class="text-[#fff] font-bold bg-[#1DD100]  w-[1.5rem] h-[1.5rem] rounded-full text-center">0</span>
                 </div>
                 <div>
                   <h4>Class</h4>
@@ -395,37 +395,37 @@
            
               <ul
                 id="seatContainer"
-                class="pt-6 border-b"
+                class="pt-6 appendProduct border-b text-[#000000ad]"
               >
                 
               </div>
           
-              <div class="flex justify-between pt-6 w-[80%]">
-                <p>Total</p>
-                <p>BDT <span id="total">0</span></p>
+              <div class="flex justify-between pt-6">
+                <p class="font-bold">Total</p>
+                <p class="font-bold">BDT <span id="total">0</span></p>
               </div>
 
-              <div class="flex justify-between pt-6 w-[80%]">
-                <p>Discount</p>
-                <p>BDT <span id="discount15">0</span></p>
+              <div class="flex justify-between pt-6 ">
+                <p class="font-bold">Discount</p>
+                <p class="font-bold">BDT <span id="discount15">0</span></p>
               </div>
               
               <div id="couponContainer"  class="mt-8">
                 <input id="couponField"
                   type="text"
                   placeholder="Enter Coupon Code"
-                  class="input input-bordered w-full max-w-xs"
+                  class="input input-bordered  max-w-xs"
                 />
                 <button id="couponBtn" disabled class="btn bg-[#1DD100] text-[#fff]">Apply</button>
               </div>
 
-              <div class="flex justify-between pt-6 w-[80%]">
-                <p>Grand Total</p>
-                <p>BDT <span id="grandTotal">0</span></p>
+              <div class="flex justify-between pt-6 ">
+                <p class="font-bold">Grand Total</p>
+                <p class="font-bold">BDT <span id="grandTotal">0</span></p>
               </div>
 
               <div class="pt-8">
-                <form action="">
+                <form>
                   <label for="">Passenger Name*</label>
                   <br />
                   <input
@@ -457,7 +457,7 @@
 
                   <div>
                  
-            <label for="my_modal_7" id="nextBtn" class="btn w-[65%] bg-[#1DD100] text-[#fff]" disabled>open modal</label>
+            <label for="my_modal_7" id="nextBtn" class="btn w-full bg-[#1DD100] text-[#fff]" disabled>open modal</label>
             
      
             <input type="checkbox" id="my_modal_7" class="modal-toggle" />
